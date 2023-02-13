@@ -1,0 +1,8 @@
+name=c("ab","cd","ef","gh")
+age=c(10,20,30,40)
+gender=c("M","F","M","F")
+df=data.frame(name,age,gender)
+print("Dataframe :")
+print(df)
+print("Stucture of Dataframe :")
+print(str(df))

@@ -1,0 +1,5 @@
+print("Array :")
+arr=array(data=c(1,2,3,4),dim=c(2,2),dimnames = row.names("a"))
+print(arr)
+print("Applying sum into the array :")
+print(apply(arr,1,sum))

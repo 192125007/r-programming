@@ -1,0 +1,15 @@
+library(reshape)
+id=c(1:4)
+age=c(14,12,15,10)
+sex=c("F","M","M","F")
+code=c("a","b","c","d")
+df1=data.frame(id,age)
+df2=data.frame(id,sex,code)
+df2=merge(df1,df2)
+score=c(100,98,94,99)
+id=c(4:1)
+df3=data.frame(id,score)
+df3=merge(df2,df3)
+df3$sex=NULL
+df3$code=NULL
+print(melt.data.frame(df3))
